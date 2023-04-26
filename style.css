@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap');
+
+:root
+{
+   --picker:#DBCF96;
+}
+
+  *{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; border: none;
+    text-transform: capitalise;
+    transition: all .2s linear;
+  }
+ 
+*::selection{
+    background:#C2C6A7;
+    color:#270722 ;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+}
+
+body{
+    background: #460C3D;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    width: 35rem;
+    height: 100%;
+    background: #23061F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 1rem;
+    border:.7rem solid var(--picker)
+}
+
+header .name {
+    font-size: 3.5rem;
+    color: #C2C6A7;
+}
+
+header .post{
+    font-size: 2rem;
+    color:#9AC2C5 ;
+}
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3 rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1 rem;
+    margin: 1.5rem 0;
+    background: #C2C6A7;
+    color:#23061F ;
+    border-radius: 15rem;  
+}
+
+header .navbar ul li a:hover{
+    background: var(--picker);
+}
+}
+
